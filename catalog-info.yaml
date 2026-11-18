@@ -1,0 +1,16 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: fast-test
+  description: Production-hardened Python FastAPI microservice on OpenShift
+  annotations:
+    github.com/project-slug: jordanpasildo-TMX/fast-test
+  tags:
+    - python
+    - fastapi
+    - golden-path
+    - ubi9
+spec:
+  type: service
+  lifecycle: experimental
+  owner: group:default/jordanpasildo-tmx

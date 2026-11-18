@@ -1,0 +1,16 @@
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  name: fast-test
+  labels:
+    app.kubernetes.io/name: fast-test
+spec:
+  to:
+    kind: Service
+    name: fast-test
+    weight: 100
+  port:
+    targetPort: http
+  tls:
+    termination: edge
+    insecureEdgeTerminationPolicy: Redirect
